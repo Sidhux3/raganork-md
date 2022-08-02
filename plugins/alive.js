@@ -28,7 +28,7 @@ Module({
   pattern: 'menu',
   fromMe: w,
   use: 'utility',
-  desc: 'Is bot alive?'
+  desc: 'Is bot alive 🙂?'
 }, (async (message, match) => {
   var myid = message.client.user.id.split(":")[0]
   var buttons = [{
@@ -38,18 +38,18 @@ Module({
     }
 }, {
   urlButton: {
-    displayText: 'Contact Owner',
-    url: 'https://wa.me/'+BOT_INFO.split(";")[2]+'?text=Hey+bro'
+    displayText: '8590139348',
+    url: 'https://wa.me/'+918590139348.split(";")[2]+'?text=Hey+bro'
     }
 }, {
     quickReplyButton: {
-        displayText: 'Bot status',
+        displayText: 'Bot ping now',
         id: 'ping'+myid
     }
 }, {
     quickReplyButton: {
         displayText: 'All commands',
-        id: 'commands'+myid
+        id: 'commands'+😌
     }  
 }, {
     quickReplyButton: {
@@ -82,10 +82,10 @@ if (setarr[i].use === 'utility') {
   utilmsg += `┃❉│ ${Math.floor(parseInt(i)+1)}. ${setarr[i].pattern.toString().match(/(\W*)([A-Za-zğüşıiöç1234567890 ]*)/)[2]} \n`
 }
 }
-  var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
+  var menu = `╭═══〘 ${Sidhu.split(";")[0]} 〙═══⊷❍
 ┃❉╭──────────────
 ┃❉│
-┃❉│ Owner : ${BOT_INFO.split(";")[1]}
+┃❉│ Owner : ${Sidhu.split(";")[1]}
 ┃❉│ User : ${message.senderName}
 ┃❉│ Mode : ${MODE}
 ┃❉│ Server : ${config.HEROKU.APP_NAME}
@@ -97,7 +97,7 @@ if (setarr[i].use === 'utility') {
 ┃❉│
 ┃❉│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
 ┃❉│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
-┃❉│   ${BOT_INFO.split(";")[0]}
+┃❉│   ${Eren.split(";")[0]}
 ┃❉│ 
 ┃❉╰───────────────
 ╰═════════════════⊷
@@ -162,7 +162,7 @@ if (button) {
         text: FancyRandom('Ping!')
     })
     const end = new Date().getTime()
-    await message.sendReply(FancyRandom('Pong!\n ```' + (end - start) + '``` *ms*')) 
+    await message.sendReply(FancyRandom('Ping!\n ```' + (end - start) + '``` *ms*')) 
   }
   if (button.includes(myid)&&button.startsWith("support")) return await message.sendReply(BOT_INFO.split(";")[4])
 } 
